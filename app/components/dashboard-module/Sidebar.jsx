@@ -35,11 +35,12 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faFolderOpen} className="w-6 mr-3" />
             <span>Projects</span>
           </li>
-        </ul>
-        <div className="flex cursor-pointer hover:translate-x-3 transition-transform">
+          <div className="flex cursor-pointer hover:translate-x-3 transition-transform">
           <FontAwesomeIcon icon={faGear} className="w-6 mr-3" />
           <Link href='/dashboard/settings' className="text-xl font-bold">Settings</Link>
         </div>
+        </ul>
+        
       </nav>
     </div>
   );
