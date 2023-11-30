@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import heroGif from "@/public/fs-hero-gif.gif";
+import heroGif from "../../../public/fs-hero-gif.gif";
 import Link from "next/link";
 
 const Hero = () => {

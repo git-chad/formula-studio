@@ -1,3 +1,4 @@
+import { GoogleOAuthProvider } from '@react-oauth/google'
 import { GeistSans, GeistMono } from 'geist/font'
 import './globals.css'
 
@@ -9,7 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={GeistSans.className}>{children}</body>
+      <body className={GeistSans.className}>
+        <GoogleOAuthProvider clientId="98233543291-c69vq4mhmjtdtgac6mclbsee22jsqmlt.apps.googleusercontent.com">
+          {children}
+        </GoogleOAuthProvider>
+      </body>
     </html>
   )
 }
